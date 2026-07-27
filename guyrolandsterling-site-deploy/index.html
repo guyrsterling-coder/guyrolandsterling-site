@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1B4L0ZZ4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D1B4L0ZZ4X');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guy Roland Sterling — Country · Soul · Gospel</title>
+<meta name="description" content="Music, story, and reflections from Guy Roland Sterling — heartland soul rock, country, and gospel songs written for the roads and the nights life feels heavier than it should.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guy Roland Sterling — Country · Soul · Gospel">
+<meta property="og:description" content="Road songs. Redemption songs. Love songs. A few for the nights when life feels heavier than it should.">
+<meta property="og:image" content="assets/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/hero.jpg">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@700&family=Caveat:wght@600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #14100a;
+  background-image:
+    radial-gradient(ellipse at 15% 0%, rgba(80,58,28,0.16), transparent 55%),
+    radial-gradient(ellipse at 90% 15%, rgba(70,50,26,0.12), transparent 50%),
+    radial-gradient(ellipse at 30% 90%, rgba(60,42,22,0.14), transparent 55%),
+    radial-gradient(ellipse at 85% 100%, rgba(70,50,26,0.1), transparent 50%);
+  background-attachment: fixed;
+  color: #e6d9b8;
+  font-family: 'Cinzel', Georgia, serif;
+  line-height: 1.5;
+}
+
+.leather {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  opacity: 0.5; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='l'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.06' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23l)'/%3E%3C/svg%3E");
+}
+
+.grain {
+  position: fixed; inset: 0; pointer-events: none; z-index: 999;
+  opacity: 0.12; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.title-ink {
+  font-family: 'Bevan', serif;
+  text-transform: uppercase;
+  background-image: linear-gradient(180deg,#f0dfae 0%, #cda85e 55%, #a3773a 100%);
+  background-size: 100% 100%;
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.55));
+}
+
+.script { font-family: 'Caveat', cursive; }
+.label { font-family: 'Cinzel', serif; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; }
+
+.teaser-bar {
+  position: relative; z-index: 51; text-align: center; padding: 11px 6vw;
+  background: #0d0a06; border-bottom: 1px solid #2a2115;
+}
+.teaser-bar a {
+  color: #cda85e; text-decoration: none; font-family: 'Cinzel', serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  border-bottom: 1px solid transparent; padding-bottom: 2px; transition: all 0.25s ease;
+}
+.teaser-bar a:hover { color: #e6d9b8; border-bottom-color: #cda85e; letter-spacing: 2.5px; }
+
+nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 24px 6vw;
+  position: sticky; top: 0; z-index: 50;
+  background: linear-gradient(180deg, rgba(20,16,10,0.92), rgba(20,16,10,0.7));
+  backdrop-filter: blur(4px);
+}
+nav .brand { font-family: 'Cinzel', serif; font-weight: 600; letter-spacing: 4px; font-size: 15px; color: #cda85e; }
+nav .links { display: flex; gap: 30px; font-size: 12px; letter-spacing: 2px; color: #c2b28a; }
+nav .links a { color: inherit; text-decoration: none; }
+nav .links a:hover { color: #e6d9b8; }
+
+.nav-dropdown { position: relative; }
+.nav-dropdown .dropdown-menu {
+  position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-6px);
+  background: #14100a; border: 1px solid #4a3c22; padding: 10px 0; min-width: 130px;
+  opacity: 0; visibility: hidden; transition: all 0.25s ease; z-index: 60;
+}
+.nav-dropdown:hover .dropdown-menu, .nav-dropdown:focus-within .dropdown-menu {
+  opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0);
+}
+.dropdown-menu a {
+  display: block; padding: 8px 18px; color: #8f7a4a; font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase; text-decoration: none; white-space: nowrap;
+}
+.dropdown-menu a:hover { color: #cda85e; }
+.mobile-menu a.submenu {
+  padding-left: 20px; font-size: 12px; color: #6e5d3f; border-bottom: 1px solid #2a2115;
+}
+
+.menu-toggle {
+  display: none; flex-direction: column; justify-content: center; gap: 5px;
+  width: 30px; height: 24px; background: none; border: none; cursor: pointer; padding: 0;
+}
+.menu-toggle span { display: block; height: 1px; background: #cda85e; width: 100%; transition: all 0.3s ease; }
+.menu-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.menu-toggle.open span:nth-child(2) { opacity: 0; }
+.menu-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+.mobile-menu {
+  display: none; flex-direction: column; gap: 0;
+  position: fixed; top: 0; right: 0; height: 100vh; width: min(78vw, 320px); z-index: 60;
+  background: #14100a; border-left: 1px solid #4a3c22;
+  padding: 90px 40px 40px; transform: translateX(100%); transition: transform 0.4s ease;
+}
+.mobile-menu.open { transform: translateX(0); }
+.mobile-menu a {
+  display: block; color: #e6d9b8; text-decoration: none; font-family: 'Cinzel', serif;
+  font-size: 15px; letter-spacing: 2px; text-transform: uppercase; padding: 16px 0;
+  border-bottom: 1px solid #2a2115;
+}
+.menu-scrim {
+  display: none; position: fixed; inset: 0; z-index: 55; background: rgba(0,0,0,0.6);
+  opacity: 0; transition: opacity 0.4s ease;
+}
+.menu-scrim.open { display: block; opacity: 1; }
+
+@media (max-width: 720px) {
+  nav .links { display: none; }
+  .menu-toggle { display: flex; }
+  .mobile-menu, .menu-scrim { display: flex; }
+  .mobile-menu:not(.open), .menu-scrim:not(.open) { display: none; }
+}
+
+.hero {
+  position: relative; min-height: 92vh; display: flex; align-items: flex-end;
+  background-image: linear-gradient(90deg, rgba(10,8,5,0.92) 0%, rgba(10,8,5,0.55) 38%, rgba(10,8,5,0.15) 70%), url('assets/hero.jpg');
+  background-size: cover; background-position: center 20%;
+}
+.hero-inner { padding: 0 6vw 8vw; max-width: 800px; }
+.hero .label { color: #cda85e; margin-bottom: 14px; font-size: 12px; }
+.hero .title-ink { font-size: clamp(40px, 9vw, 96px); line-height: 0.95; letter-spacing: 1px; white-space: nowrap; }
+.hero .script { font-size: clamp(20px, 3vw, 28px); color: #e6d9b8; margin-top: 14px; }
+.rope { height: 2px; width: 220px; margin: 18px 0; background: repeating-linear-gradient(90deg, #8a6d3a 0 6px, transparent 6px 10px); opacity: 0.6; }
+.hero-link {
+  display: inline-block; text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+.hero-link:hover { color: #cda85e; border-bottom-color: #cda85e; }
+
+.full-bleed {
+  position: relative; min-height: 88vh; display: flex; align-items: flex-end;
+  background-size: cover; background-position: center;
+  padding: 0;
+}
+.full-bleed .fb-inner { padding: 0 6vw 9vw; max-width: 720px; }
+.full-bleed .eyebrow {
+  display: block; color: #cda85e; font-family: 'Cinzel', serif; font-weight: 600;
+  font-size: 12px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px;
+}
+.full-bleed .title-ink { font-size: clamp(34px, 6vw, 60px); line-height: 1; margin-bottom: 18px; }
+.full-bleed p, .full-bleed blockquote {
+  font-family: Georgia, serif; color: #d8ccae; font-size: 16px; line-height: 1.6; max-width: 560px;
+}
+.full-bleed .script { font-size: clamp(20px, 2.6vw, 26px); color: #e6d9b8; margin: 16px 0; }
+.full-bleed a.text-link {
+  display: inline-block; margin-top: 22px; color: #8f7a4a; font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase; text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 4px;
+  transition: all 0.25s ease;
+}
+.full-bleed a.text-link:hover { color: #cda85e; border-bottom-color: #cda85e; }
+.full-bleed.center { align-items: center; justify-content: center; text-align: center; }
+.full-bleed.center .fb-inner { padding: 10vw 6vw; max-width: 620px; margin: 0 auto; }
+.full-bleed.center p, .full-bleed.center blockquote { margin-left: auto; margin-right: auto; }
+
+section { padding: 100px 6vw; }
+.container { max-width: 1120px; margin: 0 auto; }
+
+.section-head { margin-bottom: 48px; }
+.section-head .eyebrow {
+  display: block; color: #8f7a4a; font-family: 'Cinzel', serif; font-weight: 600;
+  font-size: 12px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 16px;
+}
+.section-head .title-ink { font-size: clamp(30px, 4vw, 44px); }
+.section-head .rope { margin: 18px 0 0; }
+.section-label { color: #8f7a4a; font-size: 12px; margin-bottom: 28px; }
+
+.vibe-featured {
+  border: 1px solid #4a3c22; background: linear-gradient(160deg, #1c160d, #14100a 80%);
+  padding: 32px 34px; margin-bottom: 26px;
+}
+.vibe-featured.with-art { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+.vibe-featured.with-art .art { width: 160px; height: 160px; flex-shrink: 0; border-radius: 6px; overflow: hidden; border: 1px solid #4a3c22; }
+.vibe-featured.with-art .art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vibe-featured.with-art .content { flex: 1; min-width: 220px; }
+@media (max-width: 520px) {
+  .vibe-featured.with-art { flex-direction: column; }
+  .vibe-featured.with-art .art { width: 100%; height: auto; aspect-ratio: 1/1; }
+}
+.vibe-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px;
+}
+.vibe-card {
+  position: relative; border: 1px solid #4a3c22;
+  background: linear-gradient(160deg, #1c160d, #14100a 80%);
+  padding: 28px 26px; transition: border-color 0.3s ease;
+}
+.vibe-card:hover { border-color: rgba(205,168,94,0.5); }
+.vibe-name {
+  font-family: 'Cinzel', serif; font-weight: 600; font-size: 15px; letter-spacing: 1px; color: #e6d9b8;
+}
+.vibe-mood {
+  font-family: Georgia, serif; font-size: 14px; line-height: 1.6; color: #a8987a; margin: 10px 0 18px;
+}
+.listen-btn {
+  font-family: 'Cinzel', serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: #cda85e; background: none; border: none; border-bottom: 1px solid #cda85e;
+  padding: 0 0 3px; cursor: pointer; transition: color 0.25s ease;
+}
+.listen-btn:hover { color: #e6d9b8; }
+.vibe-embed { display: none; margin-top: 18px; border-radius: 6px; overflow: hidden; }
+.vibe-embed.open { display: block; }
+.vibe-embed iframe { width: 100%; border: none; display: block; }
+.vibe-card.catalog {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  flex-direction: column; gap: 8px; text-decoration: none;
+  background: linear-gradient(160deg, #241d13, #14100a 75%);
+}
+.vibe-card.catalog .num { font-family: 'Bevan', serif; font-size: 34px; color: #cda85e; }
+.vibe-card.catalog .sub { font-size: 11px; letter-spacing: 2px; color: #8f7a4a; text-transform: uppercase; }
+.stream-note {
+  margin-top: 40px; text-align: center; font-family: Georgia, serif; font-size: 14px; color: #8f7a4a;
+}
+.stream-note strong { color: #cda85e; font-style: normal; }
+
+.stream-stat { text-align: center; margin-bottom: 34px; }
+.stream-stat .num {
+  font-family: 'Bevan', serif; font-size: clamp(32px, 6vw, 48px);
+  background-image: linear-gradient(180deg,#f0dfae 0%, #cda85e 55%, #a3773a 100%);
+  background-size: 100% 100%; -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+}
+.stream-stat .label {
+  font-family: Georgia, serif; font-size: 14px; color: #a8987a; margin-top: 6px; line-height: 1.6;
+}
+.stream-stat .label span { display: block; font-size: 12px; color: #6e5d3f; margin-top: 4px; }
+
+.daily-bread {
+  padding: 80px 6vw; text-align: center;
+}
+.daily-bread-inner { max-width: 680px; margin: 0 auto; }
+.daily-bread-card {
+  border: 1px solid #4a3c22; background: linear-gradient(160deg, #1c160d, #14100a 80%);
+  padding: 52px 44px;
+}
+.daily-bread-date {
+  font-family: 'Cinzel', serif; font-weight: 600; font-size: 10px; letter-spacing: 2px;
+  text-transform: uppercase; color: #6e5d3f; margin-top: 18px;
+}
+.daily-bread-verse {
+  font-family: Georgia, serif; font-style: italic; color: #e6d9b8;
+  font-size: clamp(19px, 2.6vw, 24px); line-height: 1.75;
+}
+.daily-bread-ref {
+  display: block; margin-top: 20px; font-family: 'Cinzel', serif; font-weight: 600;
+  font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #cda85e;
+}
+.daily-bread-note {
+  margin-top: 30px; font-family: Georgia, serif; font-style: italic; font-size: 12px; color: #6e5d3f;
+}
+
+.signup-form { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.signup-form input[type="email"] {
+  font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 1px; color: #e6d9b8;
+  background: #14100a; border: 1px solid #4a3c22; padding: 14px 18px; border-radius: 4px;
+  min-width: 260px; outline: none;
+}
+.signup-form input[type="email"]:focus { border-color: #cda85e; }
+.signup-form input[type="email"]::placeholder { color: #6e5d3f; }
+.signup-form button {
+  font-family: 'Cinzel', serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+  color: #14100a; background: #cda85e; border: none; padding: 14px 26px; border-radius: 4px; cursor: pointer;
+  transition: background 0.25s ease;
+}
+.signup-form button:hover { background: #e6d9b8; }
+.signup-form textarea {
+  font-family: Georgia, serif; font-size: 14px; line-height: 1.6; color: #e6d9b8;
+  background: #14100a; border: 1px solid #4a3c22; padding: 14px 18px; border-radius: 4px;
+  width: 100%; min-height: 90px; resize: vertical; outline: none;
+}
+.signup-form textarea:focus { border-color: #cda85e; }
+.signup-form textarea::placeholder { color: #6e5d3f; }
+
+footer { padding: 60px 6vw 30px; }
+.footer-inner {
+  display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 30px;
+  max-width: 1120px; margin: 0 auto; padding-bottom: 34px;
+}
+.footer-brand .label { color: #cda85e; font-size: 14px; letter-spacing: 4px; }
+.footer-brand .tag { font-size: 11px; color: #6e5d3f; margin-top: 8px; letter-spacing: 1px; }
+.footer-links { display: flex; gap: 26px; flex-wrap: wrap; }
+.footer-links a {
+  color: #8f7a4a; text-decoration: none; font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  border-bottom: 1px solid transparent; padding-bottom: 4px; transition: all 0.25s ease;
+}
+.footer-links a:hover { color: #cda85e; border-bottom-color: #cda85e; }
+.footer-bottom {
+  text-align: center; font-size: 10px; letter-spacing: 1.5px; color: #6e5d3f; text-transform: uppercase;
+  padding-top: 26px; border-top: 1px solid #2a2115;
+}
+
+@media (max-width: 720px) {
+  .full-bleed { min-height: 78vh; }
+}
+</style>
+</head>
+<body>
+<div class="leather"></div>
+<div class="grain"></div>
+
+<div class="teaser-bar">
+  <a href="devotional-battle-is-the-lords.html">New Bible Study: "The Battle Is the Lord's" →</a>
+</div>
+
+<nav>
+  <div class="brand">GUY ROLAND STERLING</div>
+  <div class="links">
+    <a href="laughs.html">Laughter</a>
+    <div class="nav-dropdown">
+      <a href="#music">Music</a>
+      <div class="dropdown-menu">
+        <a href="#music">Music</a>
+        <a href="song-stories.html">Behind the Scenes</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="#scripture">Love</a>
+      <div class="dropdown-menu">
+        <a href="#scripture">Love</a>
+        <a href="reflections.html">Reflections</a>
+        <a href="share-your-story.html">Share Your Story</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="#story">Hello</a>
+      <div class="dropdown-menu">
+        <a href="#story">Hello</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="menu-scrim"></div>
+<div class="mobile-menu">
+  <a href="laughs.html">Laughter</a>
+  <a href="#music">Music</a>
+  <a href="song-stories.html" class="submenu">Behind the Scenes</a>
+  <a href="#scripture">Love</a>
+  <a href="reflections.html" class="submenu">Reflections</a>
+  <a href="share-your-story.html" class="submenu">Share Your Story</a>
+  <a href="#story">Hello</a>
+  <a href="#contact" class="submenu">Contact</a>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="label">Country · Soul · Gospel</div>
+    <div class="title-ink">Echoes</div>
+    <a href="#music" class="script hero-link">Let'm settle... listen now...</a>
+  </div>
+</div>
+
+<section id="daily-bread" class="daily-bread">
+  <div class="daily-bread-inner">
+    <span class="eyebrow">Daily Bread</span>
+    <div class="daily-bread-card">
+      <p class="daily-bread-verse" id="daily-bread-verse">"The LORD is my shepherd; I shall not want."</p>
+      <span class="daily-bread-ref" id="daily-bread-ref">Psalm 23:1</span>
+      <div class="daily-bread-date" id="daily-bread-date">Today</div>
+    </div>
+    <p class="daily-bread-note">A new verse every day, at 6 AM Eastern.</p>
+  </div>
+</section>
+
+<section id="story" class="full-bleed" style="background-image: linear-gradient(90deg, rgba(10,8,5,0.9) 0%, rgba(10,8,5,0.5) 42%, rgba(10,8,5,0.1) 75%), url('assets/bio-photo.jpg'); background-position: center 15%;">
+  <div class="fb-inner">
+    <span class="eyebrow">The Story</span>
+    <div class="title-ink">Roots</div>
+    <p class="script" style="margin-top:2px;">You found your way here... thanks!</p>
+    <p style="margin-top:18px;">Built this for ya...</p>
+    <p style="margin-top:18px;">Hoping somewhere in these songs, or in one of the stories, there might be something that inspires you or lifts your spirit for whatever kind of week you're having.</p>
+    <p style="margin-top:18px;">Our lives have been a journey — highs, lows, all of it — and by God's grace, maybe there's a rainbow tomorrow.</p>
+    <p style="margin-top:18px;">The music I write comes from my life... Road songs. Redemption songs. Love songs. Summer songs. Some from the nights when things felt heavy... we've all had them...</p>
+    <p style="margin-top:18px;">I release a song once it's honest enough that I can't sit on it anymore — because if it needed saying, chances are it needs hearing too.</p>
+    <p style="margin-top:18px;">And I'm always looking for inspiration... so drop me a comment if you'd like by saying... Hello!</p>
+  </div>
+</section>
+
+<section id="music">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Music</span>
+      <div class="title-ink">Vibes</div>
+      <div class="rope"></div>
+    </div>
+
+    <div class="stream-stat">
+      <div class="num">142,926</div>
+      <div class="label">Spotify streams in the past year — and still climbing
+        <span>Just one of 20+ platforms these songs live on</span>
+      </div>
+    </div>
+
+    <div class="vibe-featured with-art">
+      <div class="art"><img src="assets/cover-stuck-in-the-rain.jpg" alt="Stuck In The Rain cover art"></div>
+      <div class="content">
+        <span class="eyebrow" style="margin-bottom:10px;">Latest Release</span>
+        <div class="vibe-name" style="font-size:19px;">Stuck In The Rain</div>
+        <p class="vibe-mood" style="margin-top:6px; color:#cda85e; font-style:normal; letter-spacing:1px; font-size:12px; text-transform:uppercase;">Released July 17, 2026</p>
+        <p class="vibe-mood" style="margin-top:8px;">Play it right here — full song, no login, no waiting.</p>
+        <audio controls style="width:100%; margin-top:18px; border-radius:6px;">
+          <source src="assets/audio/stuck-in-the-rain.mp3" type="audio/mpeg">
+          Your browser doesn't support embedded audio. <a href="assets/audio/stuck-in-the-rain.mp3" style="color:#cda85e;">Download the song instead.</a>
+        </audio>
+        <p style="margin-top:18px; font-family: Georgia, serif; font-style: italic; font-size: 14px; line-height: 1.7; color: #a8987a; border-top: 1px solid #2a2115; padding-top:16px;">Some days in life feel like standing in the rain, wondering if the sun will ever break through. This one's about those moments we all face — when hope feels distant, mistakes weigh heavy, and we're waiting for brighter days. If you've ever found yourself holding on through life's storms, I hope this song finds you where you are and reminds you the sunshine is still worth waiting for.</p>
+      </div>
+    </div>
+
+    <div class="vibe-featured" style="margin-top:22px;">
+      <div class="vibe-name" style="font-size:19px;">Start Here</div>
+      <p class="vibe-mood" style="margin-top:8px;">New around here? Over 30 songs — one good place to begin.</p>
+      <div class="vibe-embed open" style="margin-top:20px;">
+        <iframe src="https://open.spotify.com/embed/playlist/2fgntBtbyDD6czN0bNeiAr?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="vibe-grid">
+      <div class="vibe-card">
+        <div class="vibe-name">Gospel Songs</div>
+        <p class="vibe-mood">Faith, mercy, and the cross.</p>
+        <button class="listen-btn" data-playlist="3zqojt26g5ofYi587hyVnP">Listen →</button>
+        <div class="vibe-embed"></div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-name">Songs of Redemption</div>
+        <p class="vibe-mood">For the fight to come back.</p>
+        <button class="listen-btn" data-playlist="1jDXtxNlEApIslyCCeWxTQ">Listen →</button>
+        <div class="vibe-embed"></div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-name">Country Story Songs</div>
+        <p class="vibe-mood">Real stories — love, loss, redemption, and the roads that shape us.</p>
+        <button class="listen-btn" data-playlist="25m3ccK2yLTZLip6z8DII0">Listen →</button>
+        <div class="vibe-embed"></div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-name">Backroad Driving Songs</div>
+        <p class="vibe-mood">For backroads, open highways, and the drives where the music says what you're thinking.</p>
+        <button class="listen-btn" data-playlist="5vg9WvmueSrlV1JpDtDZFQ">Listen →</button>
+        <div class="vibe-embed"></div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-name">Late Night Country Soul</div>
+        <p class="vibe-mood">For the quiet hours, when everybody else is asleep.</p>
+        <button class="listen-btn" data-playlist="74LzDVcT0oB1Z5ijcqBQHN">Listen →</button>
+        <div class="vibe-embed"></div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-name">Love Songs &amp; Devotion</div>
+        <p class="vibe-mood">Love, plain and true.</p>
+        <button class="listen-btn" data-playlist="5O0UONqfUkiuj8j6M1ejbd">Listen →</button>
+        <div class="vibe-embed"></div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-name">Outlaw Country</div>
+        <p class="vibe-mood">Grit, whiskey, and dust.</p>
+        <button class="listen-btn" data-playlist="1pY9BzEaL6yyuYHanrp1Zd">Listen →</button>
+        <div class="vibe-embed"></div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-name">Summer &amp; Good Times</div>
+        <p class="vibe-mood">Sunshine and good company.</p>
+        <button class="listen-btn" data-playlist="5nvjs5bE18bjhvCBIwEU4S">Listen →</button>
+        <div class="vibe-embed"></div>
+      </div>
+      <a class="vibe-card catalog" href="https://open.spotify.com/playlist/2Ilzs4OgnmUoAABSKIRFhj" target="_blank" rel="noopener">
+        <div class="num">200+</div>
+        <div class="sub">Hear It All →</div>
+      </a>
+    </div>
+
+    <p class="stream-note">Prefer Apple Music, YouTube, Amazon, or somewhere else? Search <strong>Guy Roland Sterling</strong> — you'll find it there too.</p>
+  </div>
+</section>
+
+<section id="scripture" class="full-bleed center" style="background-image: linear-gradient(0deg, rgba(10,8,5,0.94) 0%, rgba(10,8,5,0.7) 55%, rgba(10,8,5,0.4) 100%), url('assets/scripture-writing.jpg'); background-position: center 25%;">
+  <div class="fb-inner">
+    <span class="eyebrow">Reflections</span>
+    <div class="title-ink">A Path Less Traveled</div>
+    <p class="script" style="margin-top:2px;">"For All The Lonely Hearts" didn't start with a broken heart. It started with a cave.</p>
+    <p style="margin-top:18px;">In 1 Kings 19, Elijah has just seen fire fall from heaven — the biggest win of his life. Days later, he's alone in the wilderness, running for his life, asking God to let him die. He finds a cave and hides in it.</p>
+    <p style="margin-top:18px;">A windstorm tears through. God's not in it. An earthquake. Not there either. A fire. Still nothing.</p>
+    <p style="margin-top:18px;">Then — a whisper. And that's where Elijah finally hears him.</p>
+    <p style="margin-top:18px;">The mountain to the cave. Certainty to alone — in what couldn't have been more than a few days. Nothing outward even changed. That's not just Elijah's story. That's most of us, most weeks.</p>
+    <p style="margin-top:18px;">This song came from sitting with that gap. Not the fire. Not the mountain. The cave. The whisper — the part that never makes the highlight reel, but somehow, it's where he shows up.</p>
+    <p style="margin-top:18px;">I've sat in a cave or two of my own. Some of what I found there lives in my <a href="reflections.html" class="text-link">reflections</a>.</p>
+  </div>
+</section>
+
+<section id="contact" class="full-bleed center" style="background-image: linear-gradient(0deg, rgba(10,8,5,0.94) 0%, rgba(10,8,5,0.6) 55%, rgba(10,8,5,0.25) 100%), url('assets/bg-signup.jpg'); background-position: center 20%;">
+  <div class="fb-inner">
+    <span class="eyebrow">Stay Close</span>
+    <span class="script" style="display:block;">Where the songs came from. What happened behind them. The stuff that never makes the record.</span>
+    <form name="email-signup" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html" class="signup-form" style="margin-top:22px;">
+      <input type="hidden" name="form-name" value="email-signup" />
+      <p style="position:absolute; left:-9999px;">
+        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+      </p>
+      <textarea name="message" placeholder="Say hello, ask a question, or just leave a note — totally optional" rows="3"></textarea>
+      <input type="email" name="email" placeholder="Your email" required>
+      <button type="submit">Get the Story →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="label">Guy Roland Sterling</div>
+      <div class="tag">Country · Soul · Gospel</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://open.spotify.com/artist/1K6AUOPtuFNKUhPcXCuXIf" target="_blank" rel="noopener">Spotify</a>
+      <a href="https://music.apple.com/us/artist/guy-roland-sterling/1814666703" target="_blank" rel="noopener">Apple Music</a>
+      <a href="https://music.youtube.com/browse/MPADUCji112j3JpX3yOvHb3M8xBw" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.facebook.com/profile.php?id=61592207414063" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Guy Roland Sterling. All Rights Reserved.</div>
+</footer>
+
+<script src="assets/daily-bread.js"></script>
+<script>
+document.querySelectorAll('.listen-btn[data-playlist]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var card = btn.closest('.vibe-card');
+    var embed = card.querySelector('.vibe-embed');
+    if (embed.classList.contains('open')) {
+      embed.classList.remove('open');
+      btn.textContent = 'Listen →';
+      return;
+    }
+    if (!embed.dataset.loaded) {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://open.spotify.com/embed/playlist/' + btn.dataset.playlist + '?utm_source=generator';
+      iframe.width = '100%';
+      iframe.height = '152';
+      iframe.frameBorder = '0';
+      iframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+      iframe.loading = 'lazy';
+      embed.appendChild(iframe);
+      embed.dataset.loaded = 'true';
+    }
+    embed.classList.add('open');
+    btn.textContent = 'Close ✕';
+  });
+});
+
+var menuToggle = document.querySelector('.menu-toggle');
+var mobileMenu = document.querySelector('.mobile-menu');
+var menuScrim = document.querySelector('.menu-scrim');
+
+function closeMenu() {
+  menuToggle.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  menuScrim.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}
+
+function openMenu() {
+  menuToggle.classList.add('open');
+  mobileMenu.classList.add('open');
+  menuScrim.classList.add('open');
+  menuToggle.setAttribute('aria-expanded', 'true');
+}
+
+if (menuToggle) {
+  menuToggle.addEventListener('click', function() {
+    if (mobileMenu.classList.contains('open')) { closeMenu(); } else { openMenu(); }
+  });
+  menuScrim.addEventListener('click', closeMenu);
+  document.querySelectorAll('.mobile-menu a').forEach(function(a) {
+    a.addEventListener('click', closeMenu);
+  });
+}
+
+function getEasternParts() {
+  var fmt = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York',
+    year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23'
+  });
+  var parts = fmt.formatToParts(new Date());
+  var obj = {};
+  parts.forEach(function(p) { obj[p.type] = p.value; });
+  return {
+    year: parseInt(obj.year, 10),
+    month: parseInt(obj.month, 10),
+    day: parseInt(obj.day, 10),
+    hour: parseInt(obj.hour, 10)
+  };
+}
+
+function getDailyBreadEffectiveDate() {
+  var p = getEasternParts();
+  // Anchor at UTC noon on the Eastern calendar date to sidestep DST edge cases in date math.
+  var d = new Date(Date.UTC(p.year, p.month - 1, p.day, 12, 0, 0));
+  if (p.hour < 6) { d.setUTCDate(d.getUTCDate() - 1); }
+  return d;
+}
+
+function dailyBreadDayOfYear(d) {
+  var start = new Date(Date.UTC(d.getUTCFullYear(), 0, 1, 12, 0, 0));
+  return Math.floor((d - start) / 86400000) + 1;
+}
+
+function renderDailyBread() {
+  if (typeof DAILY_BREAD_VERSES === 'undefined' || !DAILY_BREAD_VERSES.length) { return; }
+  var d = getDailyBreadEffectiveDate();
+  var doy = dailyBreadDayOfYear(d);
+  var idx = (doy - 1) % DAILY_BREAD_VERSES.length;
+  var verse = DAILY_BREAD_VERSES[idx];
+  var verseEl = document.getElementById('daily-bread-verse');
+  var refEl = document.getElementById('daily-bread-ref');
+  var dateEl = document.getElementById('daily-bread-date');
+  if (verseEl) { verseEl.textContent = '“' + verse.text + '”'; }
+  if (refEl) { refEl.textContent = verse.ref; }
+  if (dateEl) {
+    dateEl.textContent = d.toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'long', month: 'long', day: 'numeric' });
+  }
+}
+
+renderDailyBread();
+setInterval(renderDailyBread, 60000);
+</script>
+
+<script src="assets/back-to-top.js"></script>
+</body>
+</html>

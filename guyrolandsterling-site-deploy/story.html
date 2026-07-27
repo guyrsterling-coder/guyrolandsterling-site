@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1B4L0ZZ4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D1B4L0ZZ4X');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>He Shouldn't Have Taken It — A True Story</title>
+<meta property="og:title" content="He Shouldn't Have Taken It">
+<meta property="og:description" content="A true story. Nearly fifty years buried. Never told... until now.">
+<meta property="og:image" content="assets/story-1x1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/story-1x1.jpg">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@700&family=Caveat:wght@600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #14100a;
+  background-image:
+    radial-gradient(ellipse at 15% 0%, rgba(80,58,28,0.16), transparent 55%),
+    radial-gradient(ellipse at 90% 15%, rgba(70,50,26,0.12), transparent 50%),
+    radial-gradient(ellipse at 30% 90%, rgba(60,42,22,0.14), transparent 55%),
+    radial-gradient(ellipse at 85% 100%, rgba(70,50,26,0.1), transparent 50%);
+  background-attachment: fixed;
+  color: #e6d9b8;
+  font-family: 'Cinzel', Georgia, serif;
+  line-height: 1.5;
+}
+
+.leather {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  opacity: 0.5; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='l'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.06' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23l)'/%3E%3C/svg%3E");
+}
+.grain {
+  position: fixed; inset: 0; pointer-events: none; z-index: 999;
+  opacity: 0.12; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.title-ink {
+  font-family: 'Bevan', serif;
+  text-transform: uppercase;
+  background-image: linear-gradient(180deg,#f0dfae 0%, #cda85e 55%, #a3773a 100%);
+  background-size: 100% 100%;
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.55));
+}
+.script { font-family: 'Caveat', cursive; }
+.eyebrow {
+  display: block; font-family: 'Cinzel', serif; font-weight: 600; font-size: 12px;
+  letter-spacing: 3px; text-transform: uppercase; color: #cda85e; margin-bottom: 16px;
+}
+
+nav {
+  position: sticky; top: 0; z-index: 50; display: flex; justify-content: space-between; align-items: center;
+  padding: 24px 6vw;
+  background: linear-gradient(180deg, rgba(20,16,10,0.92), rgba(20,16,10,0.7));
+  backdrop-filter: blur(4px);
+}
+nav a {
+  color: #8f7a4a; text-decoration: none; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+  border-bottom: 1px solid transparent; padding-bottom: 4px; transition: all 0.25s ease;
+}
+nav a:hover { color: #cda85e; border-bottom-color: #cda85e; }
+nav .brand { color: #cda85e; font-size: 13px; letter-spacing: 4px; }
+
+.story-hero {
+  position: relative; min-height: 94vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; background-size: cover; background-position: center;
+  background-image: linear-gradient(0deg, rgba(10,8,5,0.95) 0%, rgba(10,8,5,0.55) 55%, rgba(10,8,5,0.25) 100%), url('assets/story-16x9.jpg');
+}
+.story-hero-inner { max-width: 720px; padding: 0 6vw; }
+.story-hero .title-ink { font-size: clamp(34px, 6vw, 64px); line-height: 1.05; margin: 6px 0 20px; }
+.story-hero .script { font-size: clamp(18px, 2.4vw, 24px); color: #e6d9b8; }
+.scroll-cue {
+  position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+  font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #8f7a4a;
+  animation: bob 2.4s ease-in-out infinite;
+}
+@keyframes bob { 0%,100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 8px); } }
+
+@media (max-width: 720px) {
+  .story-hero { background-image: linear-gradient(0deg, rgba(10,8,5,0.95) 0%, rgba(10,8,5,0.6) 55%, rgba(10,8,5,0.3) 100%), url('assets/story-9x16.jpg'); }
+}
+
+.story-body {
+  position: relative; z-index: 2; max-width: 660px; margin: 0 auto; padding: 120px 6vw 60px;
+}
+.story-body p {
+  font-family: Georgia, serif; font-size: 18px; line-height: 1.85; color: #d8ccae;
+  margin-bottom: 46px;
+}
+.story-body p.dialogue { color: #e6d9b8; }
+
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.image-break {
+  position: relative; height: 68vh; margin: 20px 0 60px;
+  background-size: cover; background-position: center;
+  background-image: linear-gradient(180deg, rgba(10,8,5,0.15) 0%, rgba(10,8,5,0.4) 100%), url('assets/story-1x1.jpg');
+}
+
+.story-end {
+  position: relative; z-index: 2; max-width: 660px; margin: 0 auto; padding: 0 6vw 140px; text-align: center;
+}
+.story-end .mark { color: #6e5d3f; letter-spacing: 6px; margin: 40px 0; font-size: 12px; }
+.story-end a {
+  display: inline-block; color: #8f7a4a; text-decoration: none; font-size: 12px; letter-spacing: 2px;
+  text-transform: uppercase; border-bottom: 1px solid transparent; padding-bottom: 4px; transition: all 0.25s ease;
+}
+.story-end a:hover { color: #cda85e; border-bottom-color: #cda85e; }
+</style>
+</head>
+<body>
+<div class="leather"></div>
+<div class="grain"></div>
+
+<nav>
+  <a href="index.html">← Home</a>
+  <span class="brand">GUY ROLAND STERLING</span>
+</nav>
+
+<div class="story-hero">
+  <div class="story-hero-inner">
+    <span class="eyebrow">A True Story · Never Told</span>
+    <div class="title-ink">He Shouldn't<br>Have Taken It</div>
+    <div class="script">Nearly fifty years buried. Until now.</div>
+  </div>
+  <div class="scroll-cue">Scroll ↓</div>
+</div>
+
+<div class="story-body">
+  <p class="reveal">Some stories don't begin with answers.<br>They begin with an object.</p>
+  <p class="reveal">An old photograph.<br>A weathered Bible.<br>A tarnished pocket watch.<br>Or, in my case…<br>…a weapon.</p>
+  <p class="reveal">Nearly fifty years have passed since that afternoon, yet I can still see it as clearly as if I'd walked back into the room yesterday.</p>
+  <p class="reveal">My friend studied me for a moment. There was something different in his eyes that day. Not fear exactly… but the look of a man deciding whether another person is ready to hear a story that has lived in his family longer than anyone can remember.</p>
+  <p class="reveal">Without a word, he turned and disappeared down the narrow hallway.</p>
+  <p class="reveal">The old house settled into silence.<br>Somewhere in another room, a floorboard groaned.<br>Outside, a mourning dove called once, then everything went strangely still.<br>I waited.</p>
+  <p class="reveal">When he returned, he wasn't carrying a photograph or an old family Bible.</p>
+  <p class="reveal">Cradled in both arms was a faded wool blanket, wrapped around something long… and unmistakably heavy.</p>
+  <p class="reveal">He set it on the kitchen table between us.<br>Not casually.<br>Reverently.</p>
+  <p class="reveal">For several seconds he said nothing.<br>Neither did I.<br>His fingers rested on the edge of the blanket as though touching something that deserved both respect… and caution.</p>
+  <p class="reveal dialogue">Then he looked up.<br>"Before you see it," he said quietly, "you need to know something."<br>I nodded.<br>"My great-grandfather wasn't supposed to come home with this."</p>
+  <p class="reveal">He folded back one corner of the blanket.<br>Dark wood appeared.<br>Another fold…<br>Then another.<br>Little by little, the mystery surrendered itself.</p>
+  <p class="reveal">Nestled inside lay the most unusual weapon I had ever seen.<br>A Native American war club.</p>
+  <p class="reveal">Age had stained the hardwood the color of burnt walnut. Time had polished the grip until it felt less like wood and more like smooth river stone. Deep carvings wound along its length like sentences written in a language no one in the room could read anymore.</p>
+  <p class="reveal dialogue">I reached toward it.<br>His hand stopped mine.<br>"I wouldn't."<br>There was no anger in his voice.<br>Only certainty.</p>
+  <p class="reveal dialogue">"You believe it's cursed?" I asked with a nervous smile.<br>He smiled faintly.<br>"No."<br>Then his expression disappeared.<br>"I believe every mark on it has a story."</p>
+  <p class="reveal">Silence settled over the room again — the kind that asks permission before it speaks.</p>
+  <p class="reveal dialogue">Finally he drew a slow breath.<br>"My great-grandfather was a preacher."</p>
+  <p class="reveal dialogue">He paused, choosing each word with care.<br>"This would have been sometime around the middle of the eighteen hundreds, when much of the American frontier was still wild. He traveled wherever people would listen, carrying little more than a Bible, a bedroll, and the conviction that every soul deserved to hear the Gospel."</p>
+  <p class="reveal dialogue">He looked down at the war club.<br>"While he was living among one of the Native tribes, he learned about this."</p>
+  <p class="reveal dialogue">His fingers traced one of the ancient carvings.<br>"They said it wasn't just another weapon."<br>He stopped.<br>"At least… that's how the story has always been told in our family."</p>
+  <p class="reveal dialogue">I leaned forward.<br>"What was so special about it?"<br>He slowly shook his head.<br>"That's the strange part. No one knows anymore."</p>
+  <p class="reveal">Whatever answer once existed had disappeared with the generations that carried it.<br>Perhaps it represented authority.<br>Perhaps victory in battle.<br>Perhaps something sacred.</p>
+  <p class="reveal">History had kept the object…<br>…and buried its meaning.</p>
+  <p class="reveal">But one part of the story survived.<br>My friend's great-grandfather became convinced the people honored this object in a way that belonged only to God. Whether he was right or wrong, he believed he had a duty before God to remove it.</p>
+  <p class="reveal">So he made a decision that would change his family forever.<br>He would steal it.</p>
+</div>
+
+<div class="image-break"></div>
+
+<div class="story-body" style="padding-top:0;">
+  <p class="reveal">Not in daylight. Not by force. But alone. At night. From the middle of a camp filled with the very people who treasured it.</p>
+  <p class="reveal">He waited until darkness settled over the village. Until conversations became whispers. Until the campfires collapsed into glowing beds of red coals.</p>
+  <p class="reveal">A horse shifted somewhere in the darkness.<br>An owl called from the trees.<br>He whispered a prayer that only heaven heard…<br>…and stepped into the sleeping camp.</p>
+  <p class="reveal">One careless footstep.<br>One barking dog.<br>One watchful warrior.<br>That would have been enough.</p>
+  <p class="reveal">There would have been no sheriff. No jury. No appeal. Only frontier justice.</p>
+  <p class="reveal">Yet somehow… against every expectation… he found the war club.<br>And somehow, he walked back out carrying it.</p>
+  <p class="reveal">I've often wondered what was running through his mind as he disappeared into the darkness with that heavy club in his hands.<br>Relief?<br>Fear?<br>Conviction?<br>Regret?</p>
+  <p class="reveal">I don't know. Neither did my friend. He simply knew that somehow the preacher escaped, and that the war club had remained in their family ever since.</p>
+  <p class="reveal">My friend passed away more than twenty years ago. The old house is quiet now. The voice that told me this story has long since fallen silent.</p>
+  <p class="reveal">But the questions he left behind have never stopped speaking.</p>
+  <p class="reveal">Why was that war club so important?<br>What did it truly represent?<br>Was the preacher acting in faith… or in presumption?</p>
+  <p class="reveal">And what became of the people who awoke the next morning to discover that the one object they treasured most…<br>…was gone?</p>
+</div>
+
+<div class="story-end">
+  <div class="mark">· · ·</div>
+  <a href="index.html">← Back to the music</a>
+</div>
+
+<script>
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+</script>
+
+<script src="assets/back-to-top.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1B4L0ZZ4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D1B4L0ZZ4X');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Share Your Story — Guy Roland Sterling</title>
+<meta name="description" content="What did a song mean to you? What are you walking through? Share your story with Guy Roland Sterling.">
+<meta property="og:title" content="Share Your Story — Guy Roland Sterling">
+<meta property="og:description" content="What did a song mean to you? We'd love to hear it.">
+<meta property="og:image" content="assets/bg-reflections.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/bg-reflections.jpg">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@700&family=Caveat:wght@600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #14100a;
+  background-image:
+    radial-gradient(ellipse at 15% 0%, rgba(80,58,28,0.16), transparent 55%),
+    radial-gradient(ellipse at 90% 15%, rgba(70,50,26,0.12), transparent 50%),
+    radial-gradient(ellipse at 30% 90%, rgba(60,42,22,0.14), transparent 55%),
+    radial-gradient(ellipse at 85% 100%, rgba(70,50,26,0.1), transparent 50%);
+  background-attachment: fixed;
+  color: #e6d9b8;
+  font-family: 'Cinzel', Georgia, serif;
+  line-height: 1.5;
+}
+
+.leather {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  opacity: 0.5; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='l'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.06' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23l)'/%3E%3C/svg%3E");
+}
+.grain {
+  position: fixed; inset: 0; pointer-events: none; z-index: 999;
+  opacity: 0.12; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.title-ink {
+  font-family: 'Bevan', serif;
+  text-transform: uppercase;
+  background-image: linear-gradient(180deg,#f0dfae 0%, #cda85e 55%, #a3773a 100%);
+  background-size: 100% 100%;
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.55));
+}
+.script { font-family: 'Caveat', cursive; }
+.eyebrow {
+  display: block; font-family: 'Cinzel', serif; font-weight: 600; font-size: 12px;
+  letter-spacing: 3px; text-transform: uppercase; color: #cda85e; margin-bottom: 16px;
+}
+
+nav {
+  position: sticky; top: 0; z-index: 50; display: flex; justify-content: space-between; align-items: center;
+  padding: 24px 6vw;
+  background: linear-gradient(180deg, rgba(20,16,10,0.92), rgba(20,16,10,0.7));
+  backdrop-filter: blur(4px);
+}
+nav a {
+  color: #8f7a4a; text-decoration: none; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+  border-bottom: 1px solid transparent; padding-bottom: 4px; transition: all 0.25s ease;
+}
+nav a:hover { color: #cda85e; border-bottom-color: #cda85e; }
+nav .brand { color: #cda85e; font-size: 13px; letter-spacing: 4px; }
+
+.sys-hero {
+  position: relative; min-height: 52vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; background-size: cover; background-position: center 20%;
+  background-image: linear-gradient(0deg, rgba(10,8,5,0.94) 0%, rgba(10,8,5,0.6) 55%, rgba(10,8,5,0.3) 100%), url('assets/bg-reflections.jpg');
+  padding: 0 6vw;
+}
+.sys-hero-inner { max-width: 640px; }
+.sys-hero .title-ink { font-size: clamp(32px, 6vw, 54px); line-height: 1.05; margin: 6px 0 20px; }
+.sys-hero .script { font-size: clamp(18px, 2.4vw, 24px); color: #e6d9b8; }
+.sys-hero .note {
+  margin-top: 22px; font-family: Georgia, serif; font-size: 14px; font-style: italic; color: #a8987a; line-height: 1.7;
+}
+
+.sys-wrap { position: relative; z-index: 2; max-width: 680px; margin: 0 auto; padding: 70px 6vw 40px; }
+
+.story-form {
+  border: 1px solid #4a3c22; background: linear-gradient(160deg, #1c160d, #14100a 80%);
+  padding: 40px 36px;
+}
+.story-form label {
+  display: block; font-family: 'Cinzel', serif; font-weight: 600; font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase; color: #cda85e; margin-bottom: 8px;
+}
+.story-form .field { margin-bottom: 24px; }
+.story-form input[type="text"],
+.story-form input[type="email"],
+.story-form select,
+.story-form textarea {
+  width: 100%; background: #0f0c07; border: 1px solid #4a3c22; color: #e6d9b8;
+  font-family: Georgia, serif; font-size: 15px; padding: 12px 14px; border-radius: 4px;
+  transition: border-color 0.25s ease;
+}
+.story-form input[type="text"]:focus,
+.story-form input[type="email"]:focus,
+.story-form select:focus,
+.story-form textarea:focus { outline: none; border-color: #cda85e; }
+.story-form textarea { min-height: 140px; resize: vertical; line-height: 1.6; }
+.story-form .hint { font-family: Georgia, serif; font-style: italic; font-size: 12px; color: #6e5d3f; margin-top: 6px; }
+.story-form button {
+  font-family: 'Cinzel', serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+  color: #14100a; background: linear-gradient(180deg,#f0dfae 0%, #cda85e 100%); border: none;
+  padding: 14px 30px; border-radius: 4px; cursor: pointer; transition: opacity 0.25s ease;
+}
+.story-form button:hover { opacity: 0.88; }
+
+.sys-divider {
+  text-align: center; color: #6e5d3f; letter-spacing: 6px; margin: 70px 0 40px; font-size: 12px;
+}
+
+.stories-feed { position: relative; z-index: 2; max-width: 680px; margin: 0 auto; padding: 0 6vw 140px; }
+.story-card {
+  border: 1px solid #4a3c22; background: linear-gradient(160deg, #1c160d, #14100a 80%);
+  padding: 28px 30px; margin-bottom: 18px;
+}
+.story-card .story-meta {
+  display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;
+}
+.story-card .story-type {
+  font-family: 'Cinzel', serif; font-weight: 600; font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #cda85e;
+}
+.story-card .story-name {
+  font-family: 'Cinzel', serif; font-weight: 600; font-size: 12px; color: #8f7a4a;
+}
+.story-card p { font-family: Georgia, serif; font-size: 15px; line-height: 1.75; color: #d8ccae; }
+
+.stories-empty {
+  text-align: center; font-family: Georgia, serif; font-style: italic; color: #6e5d3f; font-size: 14px;
+  padding: 20px 6vw;
+}
+</style>
+</head>
+<body>
+<div class="leather"></div>
+<div class="grain"></div>
+
+<nav>
+  <a href="reflections.html">← Reflections</a>
+  <span class="brand">GUY ROLAND STERLING</span>
+</nav>
+
+<div class="sys-hero">
+  <div class="sys-hero-inner">
+    <span class="eyebrow">Love · Community</span>
+    <div class="title-ink">Share Your Story</div>
+    <div class="script">What did a song mean to you? What are you walking through?</div>
+    <p class="note">I read every story that comes through here myself. Some I'll ask permission to share below, so others can be encouraged too — but nothing gets posted without you knowing first.</p>
+  </div>
+</div>
+
+<div class="sys-wrap">
+  <form name="community-story" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html" class="story-form">
+    <input type="hidden" name="form-name" value="community-story" />
+    <p style="position:absolute; left:-9999px;">
+      <label>Don't fill this out if you're human: <input name="bot-field"></label>
+    </p>
+
+    <div class="field">
+      <label for="story-name">Your Name (or leave blank for Anonymous)</label>
+      <input type="text" id="story-name" name="name" placeholder="First name is plenty">
+    </div>
+
+    <div class="field">
+      <label for="story-type">What kind of story is this?</label>
+      <select id="story-type" name="story-type">
+        <option>Testimony</option>
+        <option>What a Song Meant to Me</option>
+        <option>Prayer Request</option>
+        <option>Something Else</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="story-text">Your Story</label>
+      <textarea id="story-text" name="story" required placeholder="Take your time. Write it the way you'd tell it out loud."></textarea>
+    </div>
+
+    <div class="field">
+      <label for="story-email">Email (optional)</label>
+      <input type="email" id="story-email" name="email" placeholder="you@example.com">
+      <p class="hint">Private — only so I can reply personally if it feels right. Never published, never shared.</p>
+    </div>
+
+    <button type="submit">Share This</button>
+  </form>
+</div>
+
+<div class="sys-divider">· · ·</div>
+
+<div class="stories-feed" id="stories-feed">
+  <p class="stories-empty">No stories featured yet — be the first to share yours above.</p>
+</div>
+
+<script src="assets/community-stories.js"></script>
+<script>
+(function() {
+  if (typeof COMMUNITY_STORIES === 'undefined' || !COMMUNITY_STORIES.length) { return; }
+  var feed = document.getElementById('stories-feed');
+  var html = '';
+  COMMUNITY_STORIES.forEach(function(item) {
+    html += '<div class="story-card">';
+    html += '<div class="story-meta"><span class="story-type">' + item.type + '</span><span class="story-name">— ' + (item.name || 'Anonymous') + '</span></div>';
+    html += '<p>' + item.story + '</p>';
+    html += '</div>';
+  });
+  feed.innerHTML = html;
+})();
+</script>
+
+<script src="assets/back-to-top.js"></script>
+</body>
+</html>

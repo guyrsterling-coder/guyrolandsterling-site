@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1B4L0ZZ4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D1B4L0ZZ4X');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Behind the Scenes — Guy Roland Sterling</title>
+<meta name="description" content="Where the songs came from — a welcome from Guy Roland Sterling into the stories behind the music.">
+<meta property="og:title" content="Behind the Scenes — Guy Roland Sterling">
+<meta property="og:description" content="I'm really glad you're here. Welcome behind the scenes.">
+<meta property="og:image" content="assets/bg-signup.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/bg-signup.jpg">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@700&family=Caveat:wght@600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #14100a;
+  background-image:
+    radial-gradient(ellipse at 15% 0%, rgba(80,58,28,0.16), transparent 55%),
+    radial-gradient(ellipse at 90% 15%, rgba(70,50,26,0.12), transparent 50%),
+    radial-gradient(ellipse at 30% 90%, rgba(60,42,22,0.14), transparent 55%),
+    radial-gradient(ellipse at 85% 100%, rgba(70,50,26,0.1), transparent 50%);
+  background-attachment: fixed;
+  color: #e6d9b8;
+  font-family: 'Cinzel', Georgia, serif;
+  line-height: 1.5;
+}
+
+.leather {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  opacity: 0.5; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='l'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.06' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23l)'/%3E%3C/svg%3E");
+}
+.grain {
+  position: fixed; inset: 0; pointer-events: none; z-index: 999;
+  opacity: 0.12; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.title-ink {
+  font-family: 'Bevan', serif;
+  text-transform: uppercase;
+  background-image: linear-gradient(180deg,#f0dfae 0%, #cda85e 55%, #a3773a 100%);
+  background-size: 100% 100%;
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.55));
+}
+.script { font-family: 'Caveat', cursive; }
+.eyebrow {
+  display: block; font-family: 'Cinzel', serif; font-weight: 600; font-size: 12px;
+  letter-spacing: 3px; text-transform: uppercase; color: #cda85e; margin-bottom: 16px;
+}
+
+nav {
+  position: sticky; top: 0; z-index: 50; display: flex; justify-content: space-between; align-items: center;
+  padding: 24px 6vw;
+  background: linear-gradient(180deg, rgba(20,16,10,0.92), rgba(20,16,10,0.7));
+  backdrop-filter: blur(4px);
+}
+nav a {
+  color: #8f7a4a; text-decoration: none; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+  border-bottom: 1px solid transparent; padding-bottom: 4px; transition: all 0.25s ease;
+}
+nav a:hover { color: #cda85e; border-bottom-color: #cda85e; }
+nav .brand { color: #cda85e; font-size: 13px; letter-spacing: 4px; }
+
+.story-hero {
+  position: relative; min-height: 72vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; background-size: cover; background-position: center 20%;
+  background-image: linear-gradient(0deg, rgba(10,8,5,0.94) 0%, rgba(10,8,5,0.6) 55%, rgba(10,8,5,0.3) 100%), url('assets/bg-signup.jpg');
+  padding: 0 6vw;
+}
+.story-hero-inner { max-width: 620px; }
+.story-hero .title-ink { font-size: clamp(34px, 6vw, 58px); line-height: 1.05; margin: 6px 0 20px; }
+.story-hero .script { font-size: clamp(18px, 2.4vw, 24px); color: #e6d9b8; }
+
+.story-body {
+  position: relative; z-index: 2; max-width: 640px; margin: 0 auto; padding: 90px 6vw 20px;
+}
+.story-body p {
+  font-family: Georgia, serif; font-size: 18px; line-height: 1.85; color: #d8ccae;
+  margin-bottom: 34px;
+}
+.story-body p.signoff {
+  font-family: 'Caveat', cursive; font-size: 26px; color: #cda85e; margin-top: 50px;
+}
+
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.story-end {
+  position: relative; z-index: 2; max-width: 660px; margin: 0 auto; padding: 0 6vw 140px; text-align: center;
+}
+.story-end .mark { color: #6e5d3f; letter-spacing: 6px; margin: 20px 0 30px; font-size: 12px; }
+.story-end a {
+  display: inline-block; margin: 0 12px; color: #8f7a4a; text-decoration: none; font-size: 12px; letter-spacing: 2px;
+  text-transform: uppercase; border-bottom: 1px solid transparent; padding-bottom: 4px; transition: all 0.25s ease;
+}
+.story-end a:hover { color: #cda85e; border-bottom-color: #cda85e; }
+</style>
+</head>
+<body>
+<div class="leather"></div>
+<div class="grain"></div>
+
+<nav>
+  <a href="index.html">← Home</a>
+  <span class="brand">GUY ROLAND STERLING</span>
+</nav>
+
+<div class="story-hero">
+  <div class="story-hero-inner">
+    <span class="eyebrow">Behind the Scenes</span>
+    <div class="title-ink">Welcome</div>
+    <div class="script">I'm really glad you're here.</div>
+  </div>
+</div>
+
+<div class="story-body">
+  <p class="reveal">If you've made it this far, you're probably curious about what happens before a song ever reaches Spotify, Apple Music, YouTube, or your favorite streaming service.</p>
+  <p class="reveal">The short answer?<br>Usually... not very much.</p>
+  <p class="reveal">Just one man.<br>A notebook.<br>A cup of coffee that's gone cold because I forgot it was there.<br>And a stubborn lyric that refuses to cooperate.</p>
+  <p class="reveal">People often imagine songs arriving like lightning bolts from heaven.<br>I wish.</p>
+  <p class="reveal">Most of the time they're more like old pickup trucks on a cold morning.<br>They sputter.<br>They stall.<br>Sometimes they don't start at all.</p>
+  <p class="reveal">Then, out of nowhere, one line shows up.<br>That line finds another.<br>Before long, you've got something worth humming... or at least something worth not throwing in the trash.</p>
+  <p class="reveal">This little corner of my website is where I'll invite you into that process.</p>
+  <p class="reveal">I'll share where some of the songs came from, what inspired them, the stories behind them, and occasionally the twists and turns they took before finally becoming the versions you hear today.</p>
+  <p class="reveal">I'll probably share a few ideas that never became songs.<br>Some should have.<br>Some absolutely deserved to stay in the notebook.</p>
+  <p class="reveal">And every now and then I'll wander off into one of my rambling thoughts. If you've ever sat on a porch with an old friend, you already know conversations have a habit of taking the scenic route before finding their way home.</p>
+  <p class="reveal">That's perfectly fine with me.</p>
+  <p class="reveal">I won't be sending these on a strict schedule.<br>Life has a funny way of interrupting our plans, and songs seem to keep their own calendars. So I'll write whenever time allows and whenever I have something I think is worth sharing.</p>
+  <p class="reveal">My hope is simple.<br>When one of these emails lands in your inbox, I don't want it to feel like another newsletter.<br>I want it to feel like we've pulled up a couple of chairs, poured another cup of coffee, and started talking about life... and how sometimes the best songs have a way of finding us when we weren't even looking.</p>
+  <p class="reveal">Thanks for coming along.<br>I think we're going to have a good time together.</p>
+  <p class="reveal signoff">— Guy Roland Sterling</p>
+</div>
+
+<div class="story-end">
+  <div class="mark reveal">· · ·</div>
+  <a href="songstory-lonely-hearts.html">The First Story →</a>
+  <a href="index.html#contact">Get Notified First →</a>
+</div>
+
+<script>
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+</script>
+<script src="assets/back-to-top.js"></script>
+</body>
+</html>
