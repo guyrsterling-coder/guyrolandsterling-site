@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1B4L0ZZ4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D1B4L0ZZ4X');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Well at Noon — Guy Roland Sterling</title>
+<meta name="description" content="A reflection on John 4:1–42 from Guy Roland Sterling — the Samaritan woman at the well, and what it cost her to tell a stranger the truth.">
+<meta property="og:title" content="The Well at Noon">
+<meta property="og:description" content="She had no reason to tell Him the truth. She told Him anyway.">
+<meta property="og:image" content="assets/bg-reflections.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/bg-reflections.jpg">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@700&family=Caveat:wght@600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #14100a;
+  background-image:
+    radial-gradient(ellipse at 15% 0%, rgba(80,58,28,0.16), transparent 55%),
+    radial-gradient(ellipse at 90% 15%, rgba(70,50,26,0.12), transparent 50%),
+    radial-gradient(ellipse at 30% 90%, rgba(60,42,22,0.14), transparent 55%),
+    radial-gradient(ellipse at 85% 100%, rgba(70,50,26,0.1), transparent 50%);
+  background-attachment: fixed;
+  color: #e6d9b8;
+  font-family: 'Cinzel', Georgia, serif;
+  line-height: 1.5;
+}
+
+.leather {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  opacity: 0.5; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='l'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.06' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23l)'/%3E%3C/svg%3E");
+}
+.grain {
+  position: fixed; inset: 0; pointer-events: none; z-index: 999;
+  opacity: 0.12; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.title-ink {
+  font-family: 'Bevan', serif;
+  text-transform: uppercase;
+  background-image: linear-gradient(180deg,#f0dfae 0%, #cda85e 55%, #a3773a 100%);
+  background-size: 100% 100%;
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.55));
+}
+.script { font-family: 'Caveat', cursive; }
+.eyebrow {
+  display: block; font-family: 'Cinzel', serif; font-weight: 600; font-size: 12px;
+  letter-spacing: 3px; text-transform: uppercase; color: #cda85e; margin-bottom: 16px;
+}
+
+nav {
+  position: sticky; top: 0; z-index: 50; display: flex; justify-content: space-between; align-items: center;
+  padding: 24px 6vw;
+  background: linear-gradient(180deg, rgba(20,16,10,0.92), rgba(20,16,10,0.7));
+  backdrop-filter: blur(4px);
+}
+nav a {
+  color: #8f7a4a; text-decoration: none; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+  border-bottom: 1px solid transparent; padding-bottom: 4px; transition: all 0.25s ease;
+}
+nav a:hover { color: #cda85e; border-bottom-color: #cda85e; }
+nav .brand { color: #cda85e; font-size: 13px; letter-spacing: 4px; }
+
+.story-hero {
+  position: relative; min-height: 78vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; background-size: cover; background-position: center;
+  background-image: linear-gradient(0deg, rgba(10,8,5,0.94) 0%, rgba(10,8,5,0.6) 55%, rgba(10,8,5,0.3) 100%), url('assets/bg-reflections.jpg');
+  padding: 0 6vw;
+}
+.story-hero-inner { max-width: 720px; }
+.story-hero .title-ink { font-size: clamp(34px, 6vw, 64px); line-height: 1.05; margin: 6px 0 20px; }
+.story-hero .script { font-size: clamp(18px, 2.4vw, 24px); color: #e6d9b8; }
+.story-hero .author { font-family: 'Cinzel', serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8f7a4a; margin-top: 16px; }
+
+.story-body {
+  position: relative; z-index: 2; max-width: 660px; margin: 0 auto; padding: 90px 6vw 20px;
+}
+.story-body p {
+  font-family: Georgia, serif; font-size: 18px; line-height: 1.85; color: #d8ccae;
+  margin-bottom: 30px;
+}
+.story-body blockquote {
+  font-family: Georgia, serif; font-style: italic; font-size: 21px; line-height: 1.6; color: #e6d9b8;
+  margin: 0 0 34px; padding: 4px 0 4px 22px; border-left: 2px solid #cda85e;
+}
+
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.story-end {
+  position: relative; z-index: 2; max-width: 660px; margin: 0 auto; padding: 0 6vw 140px; text-align: center;
+}
+.story-end .mark { color: #6e5d3f; letter-spacing: 6px; margin: 20px 0 30px; font-size: 12px; }
+.story-end a {
+  display: inline-block; margin: 0 12px; color: #8f7a4a; text-decoration: none; font-size: 12px; letter-spacing: 2px;
+  text-transform: uppercase; border-bottom: 1px solid transparent; padding-bottom: 4px; transition: all 0.25s ease;
+}
+.story-end a:hover { color: #cda85e; border-bottom-color: #cda85e; }
+</style>
+</head>
+<body>
+<div class="leather"></div>
+<div class="grain"></div>
+
+<nav>
+  <a href="reflections.html">← Reflections</a>
+  <span class="brand">GUY ROLAND STERLING</span>
+</nav>
+
+<div class="story-hero">
+  <div class="story-hero-inner">
+    <span class="eyebrow">Reflections · John 4:1–42</span>
+    <div class="title-ink">The Well at Noon</div>
+    <div class="script">She had no reason to tell Him the truth.</div>
+    <div class="author">By Guy Roland Sterling</div>
+  </div>
+</div>
+
+<div class="story-body">
+  <p class="reveal">The sun was high... middle of the day... cruel, she begins her walk to the well.</p>
+  <p class="reveal">Small detail... but one worth noting.</p>
+  <p class="reveal">Women in that culture drew water together, in the cool hours — early morning, or evening, when the heat had loosened its grip and the walk could stretch out into conversation.</p>
+  <p class="reveal">Water-drawing was social time. For a woman in a small town, it was the one guaranteed gathering of her day.</p>
+  <p class="reveal">She skipped it. On purpose. Every single day.</p>
+  <p class="reveal">Meaning... every single day she chose the worst hour of the sun. She picked the heat. She picked the empty road. She picked the dead weight of a full jar carried home alone. Why?</p>
+  <p class="reveal">Something had happened... something significant enough to make that journey alone.</p>
+  <div class="mark reveal">· · ·</div>
+  <p class="reveal">We never learn her name. John doesn't give it. He gives us a place instead... Sychar, in Samaria... a well... and not just any well.</p>
+  <p class="reveal">One older than the kingdom of Israel: Jacob's well. The same Jacob who wrestled all night and limped away renamed. The same well his descendants had fought over, split over, and hated each other... for over five centuries!</p>
+  <p class="reveal">Established hatred. Common unspoken knowledge to all. This woman walks up to it with an empty jar.</p>
+  <p class="reveal">That hatred isn't background scenery. It's the heart of the scene.</p>
+  <p class="reveal">Jews and Samaritans both claimed Abraham. Both claimed Moses. Both insisted they alone had kept the faith uncorrupted.</p>
+  <p class="reveal">Adding insult to injury — five hundred years before this afternoon, the Samaritans offered to help rebuild the temple in Jerusalem. They were refused. Turned away. Called half-breeds, unclean from birth.</p>
+  <p class="reveal">So they built their own temple, on their own mountain: Gerizim, not Zion. For generations it stood there as a rival house of God, in plain view across the valley.</p>
+  <p class="reveal">And a century before this afternoon... the Jews burned it down.</p>
+  <p class="reveal">So here we are, at this well, in the heat of the day... in the heat of the history.</p>
+  <p class="reveal">The grudge. Blood-deep resentment running both directions, with scripture quoted on both sides. Jews traveling from Galilee to Jerusalem added days to their journey to avoid Samaritan ground.</p>
+  <p class="reveal">But, John says Jesus <em>had to</em> go through Samaria.</p>
+  <p class="reveal">Odd. Very. No one had to. Just the opposite, everyone went around. That was custom.</p>
+  <p class="reveal">But Jesus.</p>
+  <p class="reveal">He had an appointment to keep. On a road less traveled. A road of friction, rather than a road of ease. No hesitation, only determination to achieve His Father's will.</p>
+  <p class="reveal">So there He is — sitting on the stones of Jacob's well, alone, dusty, worn out from walking, at the one hour of the day when nobody comes for water.</p>
+  <p class="reveal">Except the expected.</p>
+  <p class="reveal">The woman who had made that trip every day at the same time. No accident. Jesus knew what time He had to arrive.</p>
+  <div class="mark reveal">· · ·</div>
+  <p class="reveal">She arrives. He speaks first.</p>
+  <blockquote class="reveal">"Give Me a drink."</blockquote>
+  <p class="reveal">Four words... every one a demolition.</p>
+  <p class="reveal">A Jewish man did not speak to a Samaritan woman alone in public. Deeper yet, by some rabbinic reckoning, Samaritan women were counted ritually unclean from birth — a permanent, inherited impurity that made even her cup a problem.</p>
+  <p class="reveal">He doesn't merely speak to her. He doesn't ask either. He says, "Give Me a drink."</p>
+  <p class="reveal">Something to ponder. A complete stranger, one who by all accounts was an enemy, orders her... to give Him a drink.</p>
+  <p class="reveal">A tall order. It was a setup.</p>
+  <p class="reveal">Notice she doesn't take offense at being ordered. She probably was accustomed to that. But she does push back. Notice her wording. She inserts the word "ask."</p>
+  <blockquote class="reveal">"How is it that you, a Jew, ask a drink of me, a woman of Samaria?"</blockquote>
+  <p class="reveal">Maybe the pushback is why she had five husbands. Not because she was difficult — because men in that world could dismiss a woman who wasn't compliant, and dismiss her again. Speculation, of course.</p>
+  <p class="reveal">Nonetheless, it does give us a glimpse of her character — the likes of which we discover later in the narrative. But here's a stranger. She has no reason to hold back; liberty to speak her mind.</p>
+  <p class="reveal">His answer is unexpected.</p>
+  <blockquote class="reveal">"If you knew the gift of God, and who it is who says to you, 'Give Me a drink,' you would have asked Him, and He would have given you living water."</blockquote>
+  <p class="reveal">First of all, God's grace is evident. Jesus doesn't answer her question, nor does He take offense. "How is it that you, a Jew, (dare to) ask a drink of me, a woman of Samaria?"</p>
+  <p class="reveal">God's grace is offered; "If you knew the gift of God..."</p>
+  <p class="reveal">Jesus reveals Himself; and if you knew "who it is who says to you, 'Give Me a drink'..."</p>
+  <p class="reveal">Jesus offers eternal life; "you would have asked... He would have given..." living water — eternal life, the gift of God.</p>
+  <p class="reveal">She is stunned for a moment, processing what was just told to her. Mentally, she is questioning whether this stranger is telling her the truth.</p>
+  <p class="reveal">Again, she pushes back. "Sir, You have nothing to draw with and the well is deep; where then do You get that living water?"</p>
+  <p class="reveal">More pushback. "You are not greater than our father Jacob, are You, who gave us the well, and drank of it himself and his sons and his cattle?"</p>
+  <p class="reveal">Again, Jesus does not answer her questions. He controls the narrative as usual.</p>
+  <blockquote class="reveal">"Everyone who drinks of this water will thirst again; but whoever drinks of the water that I will give him shall never thirst; but the water that I will give him will become in him a well of water springing up to eternal life."</blockquote>
+  <p class="reveal">Now her heart is starting to convict her... "Sir, give me this water, so I will not be thirsty nor come all the way here to draw."</p>
+  <div class="mark reveal">· · ·</div>
+  <p class="reveal">Often, treasures are found in the smallest of details. And here is another one. This woman does not "ask" — she says "give" (imperative), exactly as Jesus commanded her to do when she arrived at the well. Yet again, pushback. So Jesus Himself pushes back.</p>
+  <p class="reveal">This is the "setup" I mentioned earlier. Four words, "Give Me a drink," created dialogue that led to this moment of truth. This is her chance to reveal herself now.</p>
+  <blockquote class="reveal">"Go, call your husband, and come here."</blockquote>
+  <blockquote class="reveal">"I have no husband."</blockquote>
+  <blockquote class="reveal">"You are right in saying, 'I have no husband'; for you have had five husbands, and the one you now have is not your husband. What you have said is true."</blockquote>
+  <p class="reveal">Notice what He doesn't say...</p>
+  <p class="reveal">He doesn't call her an adulteress. He doesn't call her a sinner. He states the facts of her life, and stops.</p>
+  <p class="reveal">Why?</p>
+  <p class="reveal">In that world, a woman had almost no power to end a marriage. Men divorced women. For barrenness. For displeasing them. Under the looser rabbinic readings of the day, for as little as a ruined meal.</p>
+  <p class="reveal">A woman could be widowed. A woman could be discarded, and discarded again, through no failure of her own, and possess no legal means to stop it happening a fifth time.</p>
+  <p class="reveal">We don't know her story. Nobody does.</p>
+  <p class="reveal">But five husbands could as easily be five griefs as five sins — five funerals, or five men who decided and one woman who was never asked.</p>
+  <p class="reveal">And now a sixth arrangement with no covenant behind it at all, which in that economy may have had less to do with appetite than with survival: a woman alone, five times discarded, had almost no other way to eat.</p>
+  <p class="reveal">Jesus doesn't moralize. He never tells her to go and sin no more — the thing He says plainly elsewhere, when sin is actually the subject. He tells her the truth of her life without flinching and without condemning.</p>
+  <p class="reveal">Now she is beginning to feel the weight of the encounter.</p>
+  <div class="mark reveal">· · ·</div>
+  <p class="reveal">But before she answers Him — before "Sir, I perceive that you are a prophet" — what has she just done? It's the easiest thing in the story to read straight past.</p>
+  <p class="reveal">She had no reason to tell Him the truth.</p>
+  <p class="reveal">Think about it. He was a stranger. A Jewish stranger, from a people who had spent five centuries looking down on hers.</p>
+  <p class="reveal">She owed Him nothing. Not her history. Not her losses. Not the count of men who had left, nor the name of the one at home who wasn't her husband.</p>
+  <p class="reveal">She could have lied. She could have said what she had almost certainly said to a dozen people before — "I have no husband" — and let it stand there, technically true and safely incomplete.</p>
+  <p class="reveal">She didn't.</p>
+  <p class="reveal">And when the fuller truth came out, she didn't fight it. She didn't deny it. She didn't leave embarrassed, the way anyone with something to hide would.</p>
+  <p class="reveal">She stood there — didn't step back, didn't reach for the jar — in front of a man she just met... let the truth of her life lie out in the open.</p>
+  <p class="reveal">Silence sometimes speaks the loudest. Here it is. Perhaps the woman with five broken marriages and a reputation that sent her to a well alone at noon... was an honest woman.</p>
+  <p class="reveal">We know this much: she told a complete stranger the truth about her life at a moment when a lie would have cost her nothing.</p>
+  <p class="reveal">How many people would? How many people, handed a clean chance to hide, would instead stand still and be known?</p>
+  <div class="mark reveal">· · ·</div>
+  <p class="reveal">Truth has a way of convicting. She is convicted, and states, "Sir, I perceive that You are a prophet."</p>
+  <p class="reveal">"Our fathers worshiped in this mountain, and you people say that in Jerusalem is the place where men ought to worship." She is now questioning the prophet, seeking an answer. <em>Well, where should we worship?</em></p>
+  <p class="reveal">He finally answers her roundabout question.</p>
+  <blockquote class="reveal">"Woman, believe Me, an hour is coming when neither in this mountain nor in Jerusalem will you worship the Father. You worship what you do not know; we worship what we know, for salvation is from the Jews. But an hour is coming, and now is, when the true worshipers will worship the Father in spirit and truth; for such people the Father seeks to be His worshipers. God is spirit, and those who worship Him must worship in spirit and truth."</blockquote>
+  <p class="reveal"><em>What are you saying, neither in our mountain, Gerizim, which is before us, nor in Jerusalem, but that the true worshipers will worship the Father in spirit and truth?</em></p>
+  <p class="reveal">Every Samaritan child was raised to wait for a prophet, not a king, the way the Jews were waiting; Samaritans didn't share that hope. They waited for a <em>Taheb</em> — a prophet who would come and declare all things.</p>
+  <blockquote class="reveal">"I know that Messiah is coming… when He comes, He will tell us all things."</blockquote>
+  <p class="reveal">Are you sitting down for this one? You should be...</p>
+  <p class="reveal">The very first person in John's gospel that Jesus reveals His true identity to was not a person of authority, not a disciple, but a woman who had five husbands... that should sit awhile.</p>
+  <blockquote class="reveal">"I who speak to you am He."</blockquote>
+  <p class="reveal">That's the whole reveal. No thunder. No torn curtain.</p>
+  <p class="reveal">Noon heat, an empty road, and a tired man on the rim of a well, telling a five-times-wounded Samaritan woman, flatly and without ceremony, that He is the one the world has been waiting on.</p>
+  <p class="reveal">She is now fully convinced He is the Messiah.</p>
+  <div class="mark reveal">· · ·</div>
+  <p class="reveal">And she leaves her water jar sitting there in the dirt.</p>
+  <p class="reveal">Let's turn back the clock for a moment. Let some dust settle.</p>
+  <p class="reveal">Here is a woman who had five husbands. She couldn't have been too young.</p>
+  <p class="reveal">She had carried that jar every noon for years; same routine, same beaten path. Uneventful, but a necessary chore. This day was different... She met a man who told her all things she had done. That weight... now a thing of the past.</p>
+  <p class="reveal">She wastes no time — excited with her discovery, heads to town. Not avoiding anyone this time. She had a message she couldn't hold in. A message that would affect an entire town.</p>
+  <blockquote class="reveal">"Come, see a man who told me all that I ever did. Can this be the Christ?"</blockquote>
+  <p class="reveal">And they came... and they came!</p>
+  <p class="reveal">A crowd out on the road at the wrong hour of the day, when nobody should have been walking anywhere. Not a curious trickle, either. John says many Samaritans of that town believed because of her word, before they had ever met Him.</p>
+  <p class="reveal">A woman with a history became the evangelist Jesus used to bring an entire town to Him.</p>
+  <div class="mark reveal">· · ·</div>
+  <p class="reveal">John has been setting something up since the opening of the scene, and it closes right here.</p>
+  <p class="reveal">Where were the twelve while all of this was happening?</p>
+  <p class="reveal">John told us early, in a line so plain that most readers file it as stage direction: they had gone into the town to buy food. Designed by Jesus, this woman had time alone with the Lord.</p>
+  <p class="reveal">It doesn't get better than this in life. Spending time alone with God. She was on fire... God has a way about Him that is contagious.</p>
+  <p class="reveal">May we catch fire...</p>
+  <p class="reveal">Meanwhile, the handpicked twelve were walking those same streets, among those same people.</p>
+  <p class="reveal">They came back with lunch.</p>
+  <p class="reveal">That's it... lunch. No people. No crowd. Just lunch.</p>
+  <p class="reveal">They saw Him there. Talking to that woman, but didn't dare ask why.</p>
+  <p class="reveal">Seated again? Good! Because this is where the story gets exciting.</p>
+  <p class="reveal">She walked into that same town with no training, no commission, no credentials, and one sentence to her name — <em>come, see a man</em> — and she came back with the town.</p>
+  <p class="reveal">One of the most under-vetted verses in scripture — one that moved a mountain no disciple at the time ever had.</p>
+  <p class="reveal">The disciples, these were the men being trained for precisely this. Chosen deliberately. Taught daily. Sent out later, in Luke's account, two by two, with instructions on what to carry and what to say.</p>
+  <p class="reveal">Nobody handed this woman a method. Nobody sat her down and explained how it was done — and there is no record that anyone ever told her to go at all.</p>
+  <p class="reveal">She simply did the most natural thing a human being can do upon finding something: she went and got the people she knew.</p>
+  <p class="reveal"><em>Come see a man.</em></p>
+  <p class="reveal">And in the minutes immediately after — while the crowd is already coming down the road because of her — Jesus turns to the twelve. <em>Lift up your eyes, and look on the fields; for they are white already to harvest.</em></p>
+  <p class="reveal">He was pointing at a harvest that was walking toward them. She brought it.</p>
+  <p class="reveal">Now that is worth a pause.</p>
+  <div class="mark reveal">· · ·</div>
+  <p class="reveal">Who did God pick for that?</p>
+  <p class="reveal">Not a priest. Not one of the twelve. A woman who had hidden in the shadows most of her life — He kept His appointment with her that afternoon. One that was staged long before He got there. A day of salvation, not just for a woman who carried water, but for a town thirsty for living water.</p>
+  <p class="reveal">Sychar, a city of no major political or commercial importance, receives the highest compliment... the Messiah.</p>
+  <p class="reveal">But that's not the whole of it. Dare we leave the footprint of Jacob's well unaddressed? It is here that Jesus addresses the root of their divided heritage, asserting that He is greater than Jacob, and that the physical well is being supplanted by Him.</p>
+  <blockquote class="reveal">"Not in this mountain, nor in Jerusalem will you worship the Father."</blockquote>
+  <p class="reveal">For the "hour is coming, and now is, when the true worshipers will worship the Father in spirit and truth."</p>
+  <p class="reveal">Jacob's well, the focal point to end once and for all... the long-standing feud between the Jews and the Samaritans.</p>
+  <p class="reveal">A woman walking to her appointment that would change part of history.</p>
+  <div class="mark reveal">· · ·</div>
+  <p class="reveal">God has never asked for a spotless record. No one has ever had one.</p>
+  <p class="reveal">But He does ask for commitment and honesty, both of which this woman demonstrated.</p>
+  <p class="reveal">And with it... history was made.</p>
+  <p class="reveal">God wants to use all of us. No one is ever left behind.</p>
+  <p class="reveal">Jesus presented the gospel to this woman; "whoever drinks of the water that I will give him shall never thirst; but the water that I will give him will become in him a well of water springing up to eternal life."</p>
+  <p class="reveal">She accepted. Returned with a city.</p>
+  <p class="reveal">What say you?</p>
+</div>
+
+<div class="story-end">
+  <div class="mark reveal">· · ·</div>
+  <a href="reflections.html">← More Reflections</a>
+  <a href="index.html">Home</a>
+</div>
+
+<script>
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+</script>
+<script src="assets/back-to-top.js"></script>
+</body>
+</html>
