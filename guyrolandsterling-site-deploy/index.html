@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1B4L0ZZ4X"></script>
+<!-- Consent defaults: analytics/ads storage denied until visitor accepts (Google Consent Mode v2) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied'
+  });
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1B4L0ZZ4X"></script>
+<script>
   gtag('js', new Date());
   gtag('config', 'G-D1B4L0ZZ4X');
+</script>
+
+<!-- Meta Pixel (fires only after consent is granted — see consent-banner.js) -->
+<script>
+  window.metaPixelId = 'PIXEL_ID_PLACEHOLDER';
 </script>
 
 <meta charset="UTF-8">
@@ -656,5 +671,6 @@ setInterval(renderDailyBread, 60000);
 </script>
 
 <script src="assets/back-to-top.js"></script>
+<script src="assets/consent-banner.js"></script>
 </body>
 </html>
